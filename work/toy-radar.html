@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="潮玩雷达案例：从榜单截图到可周更的数据产品与可追溯知识库。">
+  <meta name="theme-color" content="#efe9db">
+  <title>潮玩雷达｜Bryce zuo 作品集</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="case-page">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="case-header">
+    <a class="case-back" href="../index.html"><span aria-hidden="true">←</span> 返回作品集</a>
+    <span class="case-index">CASE 03 / PRODUCT</span>
+  </header>
+
+  <main id="main">
+    <header class="case-hero">
+      <p class="case-kicker reveal">2026.08—09 · 个人项目 · 已上线</p>
+      <h1 class="case-title reveal">潮玩雷达</h1>
+      <p class="case-deck reveal">把每周散落在榜单截图里的消费信号，变成一个可以按周比较、检索、追问来源的数据产品。</p>
+      <dl class="case-meta reveal">
+        <div><dt>角色</dt><dd>选题、信息架构、产品实现</dd></div>
+        <div><dt>方法</dt><dd>榜单梳理、OCR、数据可视化、浏览器端 RAG</dd></div>
+        <div><dt>类型</dt><dd>AI 产品 / 独立开发</dd></div>
+        <div><dt>状态</dt><dd>已上线，3 期真实快照</dd></div>
+      </dl>
+    </header>
+
+    <figure class="case-image reveal">
+      <img src="../assets/img/toy-radar-home.png" alt="潮玩雷达首页，显示本周头条、数据搜索与统计周选择">
+      <figcaption>潮玩雷达线上界面 / 本周头条与周度快照</figcaption>
+    </figure>
+
+    <div class="case-body">
+      <aside class="case-aside reveal">
+        <span>CONTENTS</span>
+        <ol></ol>
+      </aside>
+
+      <div class="case-content">
+        <section id="problem" class="reveal">
+          <h2>平铺榜单很多，<br>真正可用的趋势很少。</h2>
+          <p>潮玩消费者和从业者能看到大量商品排名，却很难判断：品类之间此消彼长的关系是什么、哪些商品是真正的新面孔、价格结构正在往哪里走。零散榜单能告诉你“谁在卖”，却不能直接回答“发生了什么变化”。</p>
+          <div class="case-callout">
+            <p>产品目标不是再做一张排行榜，而是把用户最需要先看到的判断放在最前面。</p>
+          </div>
+        </section>
+
+        <section id="approach" class="reveal">
+          <h2>用“本周头条”替代信息堆叠。</h2>
+          <p>总览页先给出本周最值得注意的商品、销量与环比变化，再让用户按需进入榜单、趋势和知识库。界面围绕四个判断组织：本周焦点、品类占比、价格结构和 IP 表现。</p>
+          <ul>
+            <li>以“本周头条、环比、新面孔、IP 榜”作为首屏叙事，而不是直接罗列完整排行。</li>
+            <li>把榜单截图通过 OCR 转成结构化数据，再由生成器按周累积成快照。</li>
+            <li>前端保持无框架、无构建，新增一周数据不需要重写展示逻辑。</li>
+            <li>知识库允许上传行业资料，在浏览器端检索，并让回答引用可回到原文。</li>
+          </ul>
+        </section>
+
+        <section id="evidence" class="reveal">
+          <h2>结果必须能被复核。</h2>
+          <div class="case-facts">
+            <div><dt>真实周快照</dt><dd>3 期</dd></div>
+            <div><dt>商品记录</dt><dd>236 条</dd></div>
+            <div><dt>可用商品行召回</dt><dd>86%</dd></div>
+          </div>
+          <p>OCR 结果不是直接当作最终数据，而是与三周人工整理结果回溯比对，并生成待核对清单。产品累计覆盖 319 万+ 销量，从原始截图到在线展示形成了一条可追踪的数据链。</p>
+          <p>项目在 AI 编程工具辅助下完成实现。我负责的核心判断包括：什么信息应该在首屏被看见、哪些步骤必须自动化、哪些地方必须保留人工校对，以及如何让知识库的回答不离开检索到的原文。</p>
+        </section>
+
+        <section id="reflection" class="reveal">
+          <h2>下一步，不是加更多图表。</h2>
+          <p>目前最需要补上的不是功能，而是用户证据。下一步应完成 5 位消费者与 2 位从业者的访谈，验证“趋势优先”的信息结构是否真的减少了判断成本；同时补齐连续四周数据，让趋势从形态展示变成真正可解释的持续观察。</p>
+          <div class="case-quote">
+            <p>“让每一个结论都能回到数据或原文，是产品可信度的一部分。”</p>
+          </div>
+          <p><a class="text-link text-link--strong" href="https://coldplayyys.github.io/toy-radar/" target="_blank" rel="noreferrer">打开线上产品 <span aria-hidden="true">↗</span></a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <nav class="case-bottom-nav" aria-label="项目导航">
+    <a href="heritage.html">← 上一个项目：知识如何变成责任</a>
+    <a href="../index.html#work">返回全部产品 →</a>
+  </nav>
+  <script src="../assets/script.js"></script>
+</body>
+</html>
